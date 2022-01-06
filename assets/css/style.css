@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  gap: 30px;
+}
+.wrapper-card {
+  display: inline-block;
+  width: 400px;
+  height: 200px;
+  position: relative;
+  border-radius: 15px;
+}
+.wrapper-gradient-one {
+  background: linear-gradient(
+    90deg,
+    rgb(145, 109, 160) 18%,
+    rgba(182, 137, 214, 1) 72%
+  );
+}
+.wrapper-gradient-two {
+  background: linear-gradient(
+    90deg,
+    rgba(168, 215, 241, 1) 18%,
+    rgba(10, 134, 238, 1) 72%
+  );
+}
+
+.wrapper-gradient-three {
+  background: linear-gradient(
+    90deg,
+    rgb(93, 194, 182) 24%,
+    rgba(9, 204, 245, 1) 72%
+  );
+}
+.circle-one {
+  width: 180px;
+  height: 180px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  margin-top: -30px;
+  margin-left: 280px;
+  opacity: 0.2;
+}
+
+.circle-two {
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  margin-top: 100px;
+  margin-left: 230px;
+  opacity: 0.2;
+}
+
+p {
+  padding-top: 18px;
+  padding-left: 50px;
+  color: white;
+  font-weight: bold;
+}
+
+p:nth-child(2n) {
+  font-size: 30px;
+  margin: 10px;
+}
+
+.svg-styles {
+  position: absolute;
+  top: 10%;
+  left: 80%;
+}
