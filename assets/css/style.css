@@ -34,7 +34,8 @@
     rgba(9, 204, 245, 1) 72%
   );
 }
-.circle-one {
+.circle-one::after {
+  content: '';
   width: 180px;
   height: 180px;
   background-color: white;
@@ -45,7 +46,8 @@
   opacity: 0.2;
 }
 
-.circle-two {
+.circle-two::after {
+  content: '';
   width: 200px;
   height: 200px;
   background-color: white;
