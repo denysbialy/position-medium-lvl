@@ -4,14 +4,22 @@
 .container {
   display: flex;
   gap: 30px;
+  
 }
 .wrapper-card {
   display: inline-block;
   width: 400px;
-  height: 200px;
   position: relative;
   border-radius: 15px;
+  padding: 30px;
+  color: white;
+  font-weight: bold;
 }
+.wrapper-card > p:nth-child(2n) {
+  font-size: 25px;
+  padding-bottom: 20px;
+}
+
 .wrapper-gradient-one {
   background: linear-gradient(
     90deg,
@@ -34,44 +42,32 @@
     rgba(9, 204, 245, 1) 72%
   );
 }
-.circle-one::after {
+.wrapper-card::after {
   content: '';
   width: 180px;
   height: 180px;
   background-color: white;
   border-radius: 50%;
   position: absolute;
-  margin-top: -30px;
-  margin-left: 280px;
+  top: -30px;
+  left: 280px;
   opacity: 0.2;
 }
 
-.circle-two::after {
+.wrapper-card::before {
   content: '';
   width: 200px;
   height: 200px;
   background-color: white;
   border-radius: 50%;
   position: absolute;
-  margin-top: 100px;
-  margin-left: 230px;
+  top: 100px;
+  left: 230px;
   opacity: 0.2;
-}
-
-p {
-  padding-top: 18px;
-  padding-left: 50px;
-  color: white;
-  font-weight: bold;
-}
-
-p:nth-child(2n) {
-  font-size: 30px;
-  margin: 10px;
 }
 
 .svg-styles {
   position: absolute;
-  top: 10%;
-  left: 80%;
+  top: 30px;
+  right: 30px;
 }
